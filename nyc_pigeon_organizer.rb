@@ -7,14 +7,15 @@ def nyc_pigeon_organizer(data)
   
   combined_gender = males.concat(females)
 
+  final_output = {}
+
   combined_gender.each do |x|
     final_output[x] = {color: [], gender: [], lives: []}
   end 
   
-    
-    
-  final_output = {}
-  
+  final_output
+  binding.pry 
+  puts ""
 end 
 
 
