@@ -1,37 +1,23 @@
-require 'pry'
+
 
 def nyc_pigeon_organizer(data)
-  
-  males = data[:gender][:male]
-  females = data[:gender][:female]
-  
-  combined_gender = males.concat(females)
 
-  final_output = {}
+  final_results = data.each_with_object ({}) do |(key, value), final_array|
 
-  combined_gender.each do |x|
-    final_output[x] = {color: [], gender: [], lives: []}
-  end 
-  
-  data.each do |key1, value1|
-    value1.each do |key2, value2|
-      value2.each do |name| 
-        #if name == final_output.key(name)
-      
-      
-      binding.pry 
-    #end 
+    value.each do |inner_key, names|
+      names.each do |name|
+       if !final_array[name]
+        final_array[name] = {}
+       end
+       if !final_array[name][key]
+        !final_array[name][key] = []
+       end
+      final_array[name][key].push(inner_key.to_s)
     end
-    end 
-  end 
-  
-  
-  puts ""
-end 
+  end
+end
 
-
-
-
+end
 
 
 
