@@ -14,8 +14,11 @@ def nyc_pigeon_organizer(data)
   end 
   
   final_output
-  binding.pry 
-  puts ""
+  
+  
+  
+  
+  
 end 
 
 
