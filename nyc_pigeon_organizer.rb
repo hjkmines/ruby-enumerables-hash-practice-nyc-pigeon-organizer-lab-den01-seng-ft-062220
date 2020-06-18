@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
   data.each do |key1, value1|
     value1.each do |key2, value2|
       value2.each do |name| 
-        if name == final_output.key(name)
+        #if name == final_output.key(name)
       
       
       binding.pry 
