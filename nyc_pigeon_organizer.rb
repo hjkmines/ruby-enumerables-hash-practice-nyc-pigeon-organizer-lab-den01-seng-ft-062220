@@ -13,8 +13,8 @@ def nyc_pigeon_organizer(data)
     final_output[x] = {color: [], gender: [], lives: []}
   end 
   
-  data.each do |k, v|
-    v.each do |k, v|
+  data.each do |key1, value1|
+    v.each do |key2, value2|
       binding.pry 
       
     end 
