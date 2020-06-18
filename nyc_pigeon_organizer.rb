@@ -14,12 +14,14 @@ def nyc_pigeon_organizer(data)
   end 
   
   data.each do |k, v|
-    
-    
-    
+    v.each do |k, v|
+      binding.pry 
+      
+    end 
+  end 
   
   
-  
+  puts ""
 end 
 
 
