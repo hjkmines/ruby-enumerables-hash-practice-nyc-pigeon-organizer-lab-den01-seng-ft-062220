@@ -15,8 +15,12 @@ def nyc_pigeon_organizer(data)
   
   data.each do |key1, value1|
     value1.each do |key2, value2|
-      binding.pry 
+      value2.each do |name| 
+        if name == final_output
       
+      
+      binding.pry 
+    end
     end 
   end 
   
